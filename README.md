@@ -6,3 +6,4 @@
   * Rust (2022-10-15)
 * Palindrome integer
   * Python (2022-10-15)
+  * Rust (2022-10-16)

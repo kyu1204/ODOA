@@ -7,3 +7,6 @@
 * Palindrome integer
   * Python (2022-10-15)
   * Rust (2022-10-16)
+* Roman to integer
+  * Python (2022-10-16)
+  * Rust (2022-10-16)

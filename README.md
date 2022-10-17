@@ -10,3 +10,5 @@
 * Roman to integer
   * Python (2022-10-16)
   * Rust (2022-10-16)
+* Longest Common Prefix
+  * Python (2022-10-17)

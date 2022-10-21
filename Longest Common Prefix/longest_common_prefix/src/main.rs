@@ -6,16 +6,26 @@ impl Solution {
             return String::from("")
         }
         else if strs.len() == 1 {
-            return strs.get(0).unwrap().
+            let result = strs[0].clone();
+            return result
         }
+        else {
+            let mut pre = strs[0].clone();
 
+            for i in strs {
+                while ! i.starts_with(&pre) {
+                    pre = String::from(&pre[..pre.len()-1])
+                }
+            }
 
-        String::from("")
+            return pre;
+        }
     }
 }
 
 
 
 fn main() {
-    println!("Hello, world!");
+    println!("{}", Solution::longest_common_prefix(vec![String::from("teacher"), String::from("tesla"), String::from("test")]))
+
 }

@@ -13,3 +13,5 @@
 * Longest Common Prefix
   * Python (2022-10-17)
   * Rust (2022-10-21)
+* Valid Parentheses
+  * Python (2022-10-24)

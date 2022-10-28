@@ -6,12 +6,23 @@ class Solution:
         if len(strs) == 0:
             return ""
         else:
-            pre = strs[0]
-            for i in strs:
-                while not i.startswith(pre):
-                    pre = pre[:-1]
+            pre = min(strs, key=len)
+            low = 0
+            high = len(pre)
+            while low <= high:
+                middle = int((low + high) / 2) + 1
+                if self.middleCheck(strs, pre[:middle]):
+                    low = middle + 1
+                else:
+                    high = middle - 1
 
-            return pre
+            return pre[:int((low+high)/2)]
+
+    def middleCheck(self, strs: List[str], pre: str) -> bool:
+        for i in strs:
+            if not i.startswith(pre):
+                return False
+        return True
 
 
 if __name__ == "__main__":

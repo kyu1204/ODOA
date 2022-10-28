@@ -17,5 +17,5 @@ impl Solution {
 }
 
 fn main() {
-    println!("{}", Solution::is_palindrome(13212231));
+    println!("{}", Solution::is_palindrome(1222332221));
 }
